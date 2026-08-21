@@ -42,7 +42,7 @@ Infrastructure as Code is no longer optional — a cloud security project built 
 ## 🏗️ Architecture Diagram
 
 <p align="center">
-  <img src="assets/architecture_diagram.svg" alt="ApexPay VPC Architecture Diagram" width="800">
+  <img src="files/architecture_diagram.svg" alt="ApexPay VPC Architecture Diagram" width="800">
 </p>
 
 Three-tier subnet design spread across two Availability Zones for high availability, with a fully internet-isolated data tier for anything holding sensitive payment data.
@@ -52,7 +52,7 @@ Three-tier subnet design spread across two Availability Zones for high availabil
 ## 🔀 Traffic Flow
 
 <p align="center">
-  <img src="assets/traffic_flow.svg" alt="Network Traffic Flow Diagram" width="850">
+  <img src="files/traffic_flow.svg" alt="Network Traffic Flow Diagram" width="850">
 </p>
 
 | Flow | Path | Governing Control |
@@ -66,7 +66,7 @@ Three-tier subnet design spread across two Availability Zones for high availabil
 ## 🧱 Defense in Depth
 
 <p align="center">
-  <img src="assets/defense_in_depth.svg" alt="Defense in Depth Layered Controls Diagram" width="750">
+  <img src="files/defense_in_depth.svg" alt="Defense in Depth Layered Controls Diagram" width="750">
 </p>
 
 Three independent, stacked layers — a misconfiguration in one layer doesn't collapse the whole perimeter:
@@ -114,7 +114,7 @@ Three independent, stacked layers — a misconfiguration in one layer doesn't co
 ## 📊 VPC Flow Logs Architecture
 
 <p align="center">
-  <img src="assets/flow_logs_architecture.svg" alt="VPC Flow Logs Architecture Diagram" width="800">
+  <img src="files/flow_logs_architecture.svg" alt="VPC Flow Logs Architecture Diagram" width="800">
 </p>
 
 Every packet's metadata is captured, routed to CloudWatch for near-real-time anomaly alerting, and archived to S3 for long-term, Athena-queryable audit history.
@@ -131,7 +131,7 @@ Log format:
 ## 🎯 Why Private Subnets? — Attack Surface Comparison
 
 <p align="center">
-  <img src="assets/attack_surface_comparison.svg" alt="Attack Surface Comparison Diagram" width="800">
+  <img src="files/attack_surface_comparison.svg" alt="Attack Surface Comparison Diagram" width="800">
 </p>
 
 Putting compute behind a load balancer instead of exposing it directly isn't just convention — it removes an entire class of exposure: port scanning, direct DDoS, and "any vulnerability = instant access" failure modes.
@@ -141,7 +141,7 @@ Putting compute behind a load balancer instead of exposing it directly isn't jus
 ## 🔍 Where Would Inspection Live?
 
 <p align="center">
-  <img src="assets/traffic_inspection_options.svg" alt="Traffic Inspection Options Diagram" width="850">
+  <img src="files/traffic_inspection_options.svg" alt="Traffic Inspection Options Diagram" width="850">
 </p>
 
 | Option | Approach | Trade-off |
